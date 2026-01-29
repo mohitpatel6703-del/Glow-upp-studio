@@ -1,4 +1,10 @@
-body {
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+}body {
   margin: 0;
   font-family: Arial;
   text-align: center;
