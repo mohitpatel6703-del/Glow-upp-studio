@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Up Studio | Makeup Artist</title>  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  <!-- Swiper Slider -->  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f6;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #ff5fa2, #ffc1dc);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+      animation: fadeDown 1s ease;
+    }
+
+    header h1 { font-size: 42px; font-weight: 700; }
+    header p { margin: 10px 0 20px; font-size: 18px; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fff;
+      color: #ff2f92;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.05); }
+
+    /* SLIDER */
+    .swiper {
+      width: 100%;
+      height: 260px;
+      margin-top: -40px;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+    }
+
+    /* SECTIONS */
+    section { padding: 60px 20px; text-align: center; }
+
+    h2 {
+      font-size: 32px;
+      color: #ff2f92;
+      margin-bottom: 20px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover { transform: translateY(-10px); }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* CONTACT */
+    .contact a {
+      display: block;
+      margin: 12px auto;
+      max-width: 300px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #ff5fa2;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style></head>
+<body>  <!-- HEADER -->  <header>
+    <h1>Glow Up Studio</h1>
+    <p>Professional Makeup Artist</p>
+    <a class="btn" href="https://wa.me/917668974320">Book on WhatsApp</a>
+  </header>  <!-- SLIDER -->  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9')"></div>
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1500917293891-ef795e70e1f6')"></div>
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e')"></div>
+    </div>
+  </div>  <!-- ABOUT -->  <section>
+    <h2>Why Choose Us</h2>
+    <p>We enhance your natural beauty using premium products and professional techniques for weddings, parties and special occasions.</p>
+  </section>  <!-- SERVICES -->  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">Bridal Makeup</div>
+      <div class="card">Party Makeup</div>
+      <div class="card">Engagement Makeup</div>
+      <div class="card">Photoshoot Makeup</div>
+    </div>
+  </section>  <!-- GALLERY -->  <section>
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" />
+      <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6" />
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" />
+      <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df" />
+    </div>
+  </section>  <!-- REVIEWS -->  <section>
+    <h2>Client Reviews</h2>
+    <a class="btn" href="https://forms.google.com" target="_blank">Submit Your Review</a>
+  </section>  <!-- CONTACT -->  <section class="contact">
+    <h2>Contact Us</h2>
+    <a class="btn" href="https://wa.me/917668974320">WhatsApp: +91 76689 74320</a>
+    <a class="btn" href="https://instagram.com/glow_upp_studio" target="_blank">Instagram: @glow_upp_studio</a>
+  </section>  <footer>
+    <p>© 2026 Glow Up Studio | All Rights Reserved</p>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      autoplay: { delay: 2500 },
+    });
+  </script></body>
+  </html>
