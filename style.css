@@ -1,4 +1,13 @@
-.features {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+}.features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
